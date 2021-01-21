@@ -21,7 +21,7 @@ class App extends Component {
       items: [...prevState.items, item]
     }))
   }
-
+  
   updateState = (item) => {
     const itemIndex = this.state.items.findIndex(data => data.crm === item.crm)
     const newArray = [
@@ -49,6 +49,7 @@ class App extends Component {
       <Container className="App">
         <Row>
           <Col>
+            <img src= "https://media.glassdoor.com/sql/3403115/grupo-gcb-squarelogo-1610039914115.png" width = "100" height ="100" alt = "Logo da GCB"  ></img>          
             <h1 style={{ margin: "20px 0" }}>FRONT GCB</h1>
           </Col>
         </Row>
@@ -60,6 +61,7 @@ class App extends Component {
         <Row>
           <Col>
             <ModalForm buttonLabel="Adicionar item" addItemToState={this.addItemToState} />
+            {/* <ModalForm buttonLabel="Limpar Lixeira" addItemToState={this.limparLixeira} /> */}
           {/*   <ModalForm buttonLabel="Lixeira" addItemToState={this.getLixeira()} /> */}
           </Col>
         </Row>

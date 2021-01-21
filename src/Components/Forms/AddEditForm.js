@@ -57,7 +57,7 @@ class AddEditForm extends Component {
                                 })
                                     .then(response3 => {
                                         if (response3.ok) {
-                                            window.location.reload(false)
+                                            window.location.reload()
                                         } else {
                                             alert("Erro")
                                         }
@@ -130,7 +130,7 @@ class AddEditForm extends Component {
                                         })
                                             .then(response4 => {
                                                 if (response4.ok) {
-                                                    window.location.reload(false)
+                                                    window.location.reload()
                                                 } else {
                                                     alert("Erro")
                                                 }
